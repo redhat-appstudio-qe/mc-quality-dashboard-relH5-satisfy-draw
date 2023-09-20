@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-mwom
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-wubi-tenant/mc-quality-dashboard/frontend-quality-dashboard-mwom@sha256:ba3c6800b2a11469bbf2f2b53c5dcb7a871f367205e7348f1f2888827a9c271b
+        name: quality-frontend-dashboard
+        resources: {}
+status: {}
